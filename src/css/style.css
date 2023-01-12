@@ -1,0 +1,441 @@
+/*
+    Creación de variables:
+    :root {
+        --color: #000; -> --variable: valor;
+EL PUNTO ES UNA CLASE EL #  A IN ID
+
+    }
+*/
+
+
+:root {
+    font-family: 'Lobster', cursive;
+    --color-primary: #537baf;
+    --color-primary-light: #c6e6c1;
+    --color-secondary: #f69a46;
+    --background-color: #f8f8f8;
+
+
+}
+
+/******* Global *******/
+body {
+    font-family: var(--font-family);
+      
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;/*  CENTRARLO */
+    width: 900%;
+}
+
+.btn {
+    
+    background-color: var(--color-secondary);
+    color: rgb(33, 95, 4); /******* suscribirse *******/
+
+    padding: 0.5rem .5rem;
+    font-size: 1.0rem;
+    transition: all 0.3s ease; 
+    
+  
+    /* padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-size: 1.0rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s ease; */
+}
+
+.btn:hover {
+
+    background-color: #fff;
+    color: #fff;
+    color: var(--color-secondary);
+    color: rgba(211, 221, 65, 0.856);
+}
+
+.btn-circle {
+    border-radius: 110%;
+    width: 3rem;
+    height: 3rem;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container > .btn {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    height: 36px;
+    border-radius: 0 10px 10px 0;
+}
+
+.field-text {
+    width: 101%;
+    padding: .5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 40px;
+    
+    font-size: 1rem;
+    font-family: var(--font-family);
+    transition: all 0.3s ease;
+}
+/******* comentario *******/
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.title-up {
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: var(--color-primary);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline;
+}
+
+section {
+    padding: 2rem 0;
+}
+
+/******* Header *******/
+header {
+    background-color: var(--color-primary);
+    padding: 1rem 0;
+}
+
+/******* Menu Navegación *******/
+.logo {
+    padding: rem 0px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(211, 221, 65, 0.856);
+    -webkit-box-pack: justify;
+    box-sizing: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit
+    size
+    
+}
+
+nav {
+    color: #fff;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;   /******* MARGEN A LOS LADOS LETRAS BLANCAS *******/
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;/*TENER SEPARACION ENTRE LOSDE LISTA LETRAS BLANCAS DEL CENTRO*/
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/******* Banner *******/
+.banner {
+    background-color: var(--color-primary);
+    height: 80vh;
+    padding: 1rem 0;
+}
+
+.banner-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.banner-content .banner-info {
+    display: flex;
+    flex-direction: column;  /* COMO LO QUIERO ACOMODAR SI EN COLUMNA O ROW*/
+    gap: 1rem;
+    justify-content: space-around;
+    height: 80vh;
+}
+
+.banner-text {
+    color: #fff;
+    
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.nav-network ul {
+    display: flex;
+    gap: 1rem;
+}
+
+/******* sucursales *******/
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 1rem 0;
+    
+}
+
+.card {/******* letras de  *******/
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+    
+}
+
+.card .card-info{
+ 
+    width: 5rem;
+    height: 5rem;
+    /* background-color: var(--color-primary);
+    color: rgb(66, 232, 11); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    background-color: var(--color-secondary);
+    cursor: pointer;
+    color: #fff;
+     color: rgb(62, 12, 226);
+    scale: 1.1;
+}
+
+/******* Restaurantes *******/
+.restaurentes-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem 0;
+   
+}
+
+.card-restaurante {
+    background-color: #f7f7f9;
+    background-color: #ee770e;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+   
+}
+
+.card-restaurante > .img-restaurante {
+    width: 80%;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* background-image: url('http://www.guiaquebueno.com/Images/Restaurantes/02b21f47-2de7-4be6-81b9-6777f434d7b4.jpg'); */
+    background-size: cover;
+    background-position: center;
+    scale: 2;
+}
+
+/* .card-restaurante > .img-restaurante > .calificacion {
+    background-color: var(--color-secondary);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
+    gap: 10px;
+    width: 25%;
+    margin: 10px;
+} */
+
+.card-restaurante > .card-restaurante-content {
+    padding: 1rem;
+}
+
+/******* Newsletter *******/
+.newsletter-container {
+    background-color: var(--color-primary);
+    /* padding: 1rem 0; */
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    /* align-items: flex-start; */
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-submit {
+    display: grid;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    color: #fff;
+}
+
+/******* sucursale *******/
+.sucu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.sucu .card-sucu {
+    background-color: #f7f7f9;
+    border-radius: 10px;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.sucu .card-sucu > .img-restaurante {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-image: url('http://www.guiaquebueno.com/Images/Restaurantes/02b21f47-2de7-4be6-81b9-6777f434d7b4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.sucu .card-sucu > .img-restaurante > .calificacion {
+    background-color: var(--color-secondary);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
+    gap: 10px;
+    width: 25%;
+    margin: 10px;
+}
+
+.sucu .card-sucu > .platillo-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+/******* App *******/
+#app {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.app {
+    background-color: var(--color-primary);
+    padding: 2rem;
+}
+
+.app-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
+    color: #fff;
+}
+
+.app-container .app-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.app-container .app-content .app-btn {
+    display: flex;
+    gap: 1rem;
+}
+
+/******* Footer *******/
+footer {
+    background-color: #444;
+    padding: 2rem;
+    color: #fff;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.footer-content .footer-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-content .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #fff;
+}
+
+.footer-content .footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content .footer-links a:hover {
+    color: var(--color-secondary);
+}
+
+.footer-content .subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

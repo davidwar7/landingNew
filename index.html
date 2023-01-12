@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>      <!--CLASE 4    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page | Ucamp</title>
+    <meta name="description" content="primer proyecto">
+
+    <!-- 
+        Librerias:
+        - Google Fonts
+        - Bootstrap Icons
+        - Normalize  QUITAR LOS ESTILOS DE BORDES
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect"  crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css" integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> -->
+
+
+
+    <!-- 
+        Estilos:
+        - Estilos de la pagina principal
+    -->
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <!-- 
+        Header:
+        - Logo
+        - Menu
+        - Banner
+    -->
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <h1>CERVECERIAWAR.MX</h1> <!--  CERVEZA  CERVEZA -->
+                </div>
+               
+                <div class="menu">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+             <!-- PUNTO BTN -->
+                </div>
+                <div class="btn btn-circle"><i class="bi bi-cart-fill"></i></div>
+            </div>
+        </nav>
+        <div class="banner">
+            <div class="container">
+                              <div class="banner-info">
+                        <div>
+                            <p class="banner-text">
+                                        La mejor cerveza para regalar
+                            </p>
+                            <br>
+                            <div class="input-container">
+                                <input class="field-text" type="text" placeholder="Search">
+                                <div class="btn"><i class="bi bi-search"></i></div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="nav-network">
+                            <ul>
+                                <li><a class="btn btn-circle" href="#"><i class="bi bi-facebook"></i></a></li>
+                                <li><a class="btn btn-circle" href="#"><i class="bi bi-twitter"></i></a></li>
+                                <li><a class="btn btn-circle" href="#"><i class="bi bi-instagram"></i></a></li>
+                                <li><a class="btn btn-circle" href="#"><i class="bi bi-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="banner-img">
+                        <!-- <img width="100%" src="./src/assets/banner.png" alt="Banner"> -->
+                        <img width="100%" src="./src/assets/tipos-de-cerveza.jpg"alt="Banner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="Cervezas" class="container">
+            <h3 class="title-up">cervezas</h3>
+            <h2 class="title">Los principales tipos de cerveza</h2>
+            <div class="productos-container">
+                <div class="card">
+                    <div class="card-info">
+                        <i class="bi bi-egg-fill"></i>
+                    </div>
+                    <h4>Cervezas Lager</h4>
+                    <img width="60%" src="./src/assets/lagger.avif" alt="Banner">
+                    <p>Graduación de alcohol media-baja, Son cervezas rubias elaboradas con maltas claras como la Malta Pilsner o la Premium Pilsner</p>
+                </div>
+                <div class="card">
+                    <div class="card-info">
+                        <i class="bi bi-egg-fill"></i>
+                    </div>
+                    <h4>Cervezas Ales</h4>
+                    <img width="60%" src="./src/assets/Cervezas Ales.avif" alt="Banner">
+                    <p>Son las cervezas originarias de Bélgica. Las dos más conocidas son la Ales belgas trapenses y las Saison belgas. </p>
+                </div>
+                <div class="card">
+                    <div class="card-info">
+                        <i class="bi bi-egg-fill"></i>
+                    </div>
+                    <h4>Ales belgas</h4>
+                    <img width="60%" src="./src/assets/Ales belgas.avif" alt="Banner">
+                    <p>Son las cervezas originarias de Bélgica. Las dos más conocidas son la Ales belgas trapenses y las Saison belgas.</p>
+                </div>
+                <div class="card">
+                    <div class="card-info">
+                        <i class="bi bi-egg-fill"></i>
+                    </div>
+                    <h4>Cervezas negras</h4>
+                    <img width="60%" src="./src/assets/Cervezas negras.avif" alt="Banner">
+                    <p>En las denominadas cervezas negras podemos encontramos dos subtipos principales: Cervezas Stout, Cervezas Porter</p>
+                </div>
+                <div class="card">
+                    <div class="card-info">
+                        <i class="bi bi-egg-fill"></i>
+                    </div>
+                    <h4>Ale Alemanas</h4>
+                    <img width="60%" src="./src/assets/alemana.avif" alt="Banner">
+                    <p>Las Alemanas.Siguen siendo  tipos con bastantes adeptos. Son  de las más conocidas en el mundo por su</p>
+                </div>
+            </div>
+        </section>
+        <section id="restaurantes" class="container">
+            <h3 class="title-up">Sucursales</h3>
+            <h2 class="title"></h2>
+            <p> Encuentra la sucursal más cerca de ti</p>
+            <div class="restaurentes-container">
+                <div class="card-restaurante">
+                    <div class="img-restaurante">
+                        <div class="calificacion  ">
+                            <!-- <i class="bi bi-star"></i>
+                            <p>4.5</p> -->
+                        </div>
+                    </div>
+                    <div class="card-restaurante-content">
+                        <img width="60%" src="./src/assets/sucu1.jpg" alt="Banner">
+                        <h3>Sucusal 1</h3>
+                        <p>polanco</p>
+                    </div>
+                </div>
+                <div class="card-restaurante">
+                    <div class="img-restaurante">
+                        <div class="calificacion">
+                            <!-- <i class="bi bi-star"></i>
+                            <p>4.5</p> -->
+                        </div>
+                    </div>
+                    <div class="card-restaurante-content">
+                        <img width="60%" src="./src/assets/sucu2.jpg" alt="Banner">
+                        <h3>Sucusal 2</h3>
+                        <p>Santa Fe</p>
+                    </div>
+                </div>
+                <div class="card-restaurante">
+                    <div class="img-restaurante">
+                        <div class="calificacion">
+                            <!-- <i class="bi bi-star"></i>
+                            <p>4.5</p> -->
+                        </div>
+                    </div>
+                    <div class="card-restaurante-content">
+                        <img width="60%" src="./src/assets/sucu3.jpg" alt="Banner">
+                        <h3>Sucusal 3</h3>
+                        <p>Plaza Delta</p>
+                    </div>
+                </div>
+                <div class="card-restaurante">
+                    <div class="img-restaurante">
+                        <div class="calificacion">
+                            <!-- <i class="bi bi-star"></i>
+                            <p>4.5</p> -->
+                        </div>
+                    </div>
+                    <div class="card-restaurante-content">
+                        <img width="60%" src="./src/assets/sucu4.jpg" alt="Banner">
+                        <h3>Sucusal 4</h3>
+                        <p>Plaza Antara</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="newsletter">
+            <div class="newsletter-container">
+                <div class="newsletter-content">
+                    <img width="60%" src="./src/assets/uno.avif" alt="Banner">
+                </div>
+                <div class="newsletter-submit">
+                    <h3>Newsletter</h3>
+                    <p>recibe nuestras ultimas ofertas.</p>
+                    <div class="input-container">
+                        <input class="field-text" type="text" placeholder="Email">
+                        <div class="btn">Suscribirse</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="platillos" class="container">
+            <h3 class="title-up">PLATILLOS</h3>
+            <h2 class="title">MEJORES PLATILLOS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.</p>
+            <div class="platillos">
+                <div class="card-platillo">
+                    <div class="img-restaurante">
+                        <div class="calificacion">
+                            <i class="bi bi-star"></i>
+                            <p>4.5</p>
+                        </div>
+                    </div>
+                    <div class="platillo-content">
+                        <h3>Hamburguesa</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.</p>
+                        <p class="precio">$120.50</p>
+                    </div>
+                </div>
+                <div class="card-platillo">
+                    <div class="img-restaurante">
+                        <div class="calificacion">
+                            <i class="bi bi-star"></i>
+                            <p>4.5</p>
+                        </div>
+                    </div>
+                    <div class="platillo-content">
+                        <h3>Hamburguesa</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.</p>
+                        <p class="precio">$120.50</p>
+                    </div>
+                </div>
+                <div class="card-platillo">
+                    <div class="img-restaurante">
+                        <div class="calificacion">
+                            <i class="bi bi-star"></i>
+                            <p>4.5</p>
+                        </div>
+                    </div>
+                    <div class="platillo-content">
+                        <h3>Hamburguesa</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.</p>
+                        <p class="precio">$120.50</p>
+                    </div>
+                </div>
+                <div class="card-platillo">
+                    <div class="img-restaurante">
+                        <div class="calificacion">
+                            <i class="bi bi-star"></i>
+                            <p>4.5</p>
+                        </div>
+                    </div>
+                    <div class="platillo-content">
+                        <h3>Hamburguesa</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.</p>
+                        <p class="precio">$120.50</p>
+                    </div>
+                </div>
+                <div class="card-platillo">
+                    <div class="img-restaurante">
+                        <div class="calificacion">
+                            <i class="bi bi-star"></i>
+                            <p>4.5</p>
+                        </div>
+                    </div>
+                    <div class="platillo-content">
+                        <h3>Hamburguesa</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.</p>
+                        <p class="precio">$120.50</p>
+                    </div>
+                </div>
+                <div class="card-platillo">
+                    <div class="img-restaurante">
+                        <div class="calificacion">
+                            <i class="bi bi-star"></i>
+                            <p>4.5</p>
+                        </div>
+                    </div>
+                    <div class="platillo-content">
+                        <h3>Hamburguesa</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.</p>
+                        <p class="precio">$120.50</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <section id="app">
+            <div class="app">
+                <div class="container app-container">
+                    <div class="app-content">
+                        <h3>Descarga nuestra app</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptate.</p>
+                        <div class="app-btn">
+                            <div class="btn"><i class="bi bi-apple"></i> App Store</div>
+                            <div class="btn"><i class="bi bi-google-play"></i> Play Store</div>
+                        </div>
+                    </div>
+                    <div class="app-img">
+                        <img width="100%" src="./src/assets/app.png" alt="App">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h1>FooD</h1>
+                    <div class="nav-network">
+                        <ul>
+                            <li><a class="btn btn-circle" href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li><a class="btn btn-circle" href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li><a class="btn btn-circle" href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a class="btn btn-circle" href="#"><i class="bi bi-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Platillos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="subscribe">
+                    <h3>Subscribete</h3>
+                    <div class="input-container">
+                        <input class="field-text" type="text" placeholder="Email">
+                        <div class="btn">Suscribirse</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
