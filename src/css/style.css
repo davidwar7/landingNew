@@ -35,7 +35,9 @@ ul {
 }
 
 .container {
-    max-width: 1200px;
+
+    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;/*  CENTRARLO */
     width: 900%;
 }
@@ -84,6 +86,9 @@ ul {
     right: 10px;
     height: 36px;
     border-radius: 0 10px 10px 0;
+ 
+   
+
 }
 
 .field-text {
@@ -96,6 +101,7 @@ ul {
     font-size: 1rem;
     font-family: var(--font-family);
     transition: all 0.3s ease;
+
 }
 /******* comentario *******/
 .title {
@@ -115,6 +121,7 @@ ul {
     font-size: 1rem;
     font-weight: 600;
     display: inline;
+    max-width: 80%;
 }
 
 section {
@@ -152,6 +159,7 @@ nav div {
     justify-content: space-between;   /******* MARGEN A LOS LADOS LETRAS BLANCAS *******/
     align-items: center;
     padding: 0 20px;
+    max-width: 80%;
 }
 
 nav ul {
@@ -166,13 +174,16 @@ nav ul li a {
     font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
+    max-width: 80%;
 }
 
 /******* Banner *******/
 .banner {
     background-color: var(--color-primary);
+    color: rgb(33, 196, 18);
     height: 80vh;
     padding: 1rem 0;
+    max-width: 80%;
 }
 
 .banner-content {
@@ -181,6 +192,7 @@ nav ul li a {
     gap: 1rem;
     align-items: center;
     padding: 0 20px;
+    max-width: 80%;
 }
 
 .banner-content .banner-info {
@@ -222,6 +234,7 @@ nav ul li a {
     height: 100%;
     text-align: center;
     transition: all 0.3s ease;
+    max-width: 80%;
     
 }
 
