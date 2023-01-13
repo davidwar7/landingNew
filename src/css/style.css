@@ -74,6 +74,7 @@ ul {
     border-radius: 110%;
     width: 3rem;
     height: 3rem;
+    max-width: 80%;
 }
 
 .input-container {
